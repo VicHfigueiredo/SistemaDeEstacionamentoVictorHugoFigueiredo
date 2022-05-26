@@ -30,7 +30,14 @@ namespace SistemaDeEstacionamentoVictorHugoFigueiredo.View
 
         private void ticketToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            CadastrarCarro carro = new CadastrarCarro();
+            carro.Show();
+        }
 
+        private void ticketToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Ticket t = new Ticket();
+            t.Show();
         }
     }
 }

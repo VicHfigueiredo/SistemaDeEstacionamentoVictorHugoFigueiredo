@@ -21,30 +21,58 @@ namespace SistemaDeEstacionamentoVictorHugoFigueiredo.View
         {
             
         }
+       
+
+
+
+        public void limparTela()
+        {
+            foreach (Control ctl in this.Controls)
+            {
+                if(ctl is TextBox)
+                {
+                    ctl.Text = String.Empty;
+                }
+                else if(ctl is Label && Convert.ToInt32(ctl.Tag).Equals(1)) 
+                {
+                    ctl.Text = string.Empty;
+                }
+            }
+        }
+
 
         private void button1_Click(object sender, EventArgs e)
         {
       
             try
             {
-                if (tbxNomeCli.Text != string.Empty)
+                if (tbxNomeCli.Text == string.Empty)
+                {
+                    MessageBox.Show("Falta preencher o campo");
+                    return;
+                }
+                 if (tbxCelCli.Text == string.Empty)
+                {
+                    MessageBox.Show("Falta preencher o campo");
+                    return;
+                }
+                 if (tbxEmailCli.Text == string.Empty)
+                {
+                    MessageBox.Show("Falta preencher o campo");
+                    return;
+                }
+
+                 if (tbxCelCli.Text == string.Empty)
+                {
+                    MessageBox.Show("Falta preencher o campo");
+                    return;
+                }
+                if (tbxCpfCli.Text == string.Empty)
                 {
 
+                    MessageBox.Show("Falta preencher o campo");
+                    
                 }
-                 if (tbxCelCli.Text != string.Empty)
-                {
-
-                }
-                 if (tbxEmailCli.Text != string.Empty)
-                { 
-
-                }
-
-                 if (tbxCelCli.Text != string.Empty)
-                {
-
-                }
-                if (tbxCpfCli.Text != string.Empty)
                 {
                     MessageBox.Show("Cadastro realizado");
                 }
@@ -55,6 +83,19 @@ namespace SistemaDeEstacionamentoVictorHugoFigueiredo.View
                 MessageBox.Show(ex.Message, "Alerta de erro");
             }
             
+        }
+
+        private void MenuCadastrar_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void MenuCadastrar_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if(e.KeyChar == 27)
+            {
+                limparTela();
+            }
         }
     }
 }

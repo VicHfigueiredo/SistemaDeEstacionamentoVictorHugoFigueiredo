@@ -29,6 +29,7 @@ namespace SistemaDeEstacionamentoVictorHugoFigueiredo.View
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuCadastrar));
             this.lblNomeCli = new System.Windows.Forms.Label();
             this.lblCelCli = new System.Windows.Forms.Label();
             this.lblEmailCli = new System.Windows.Forms.Label();
@@ -39,56 +40,63 @@ namespace SistemaDeEstacionamentoVictorHugoFigueiredo.View
             this.tbxEmailCli = new System.Windows.Forms.TextBox();
             this.tbxCpfCli = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblNomeCli
             // 
             this.lblNomeCli.AutoSize = true;
-            this.lblNomeCli.Location = new System.Drawing.Point(85, 63);
+            this.lblNomeCli.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblNomeCli.Location = new System.Drawing.Point(85, 93);
             this.lblNomeCli.Name = "lblNomeCli";
-            this.lblNomeCli.Size = new System.Drawing.Size(43, 15);
+            this.lblNomeCli.Size = new System.Drawing.Size(47, 17);
             this.lblNomeCli.TabIndex = 0;
             this.lblNomeCli.Text = "Nome:";
             // 
             // lblCelCli
             // 
             this.lblCelCli.AutoSize = true;
-            this.lblCelCli.Location = new System.Drawing.Point(85, 116);
+            this.lblCelCli.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblCelCli.Location = new System.Drawing.Point(85, 154);
             this.lblCelCli.Name = "lblCelCli";
-            this.lblCelCli.Size = new System.Drawing.Size(47, 15);
+            this.lblCelCli.Size = new System.Drawing.Size(51, 17);
             this.lblCelCli.TabIndex = 1;
             this.lblCelCli.Text = "Celular:";
             // 
             // lblEmailCli
             // 
             this.lblEmailCli.AutoSize = true;
-            this.lblEmailCli.Location = new System.Drawing.Point(85, 167);
+            this.lblEmailCli.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblEmailCli.Location = new System.Drawing.Point(85, 222);
             this.lblEmailCli.Name = "lblEmailCli";
-            this.lblEmailCli.Size = new System.Drawing.Size(39, 15);
+            this.lblEmailCli.Size = new System.Drawing.Size(42, 17);
             this.lblEmailCli.TabIndex = 2;
             this.lblEmailCli.Text = "Email:";
             // 
             // lblCpfCli
             // 
             this.lblCpfCli.AutoSize = true;
-            this.lblCpfCli.Location = new System.Drawing.Point(85, 219);
+            this.lblCpfCli.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblCpfCli.Location = new System.Drawing.Point(85, 284);
             this.lblCpfCli.Name = "lblCpfCli";
-            this.lblCpfCli.Size = new System.Drawing.Size(31, 15);
+            this.lblCpfCli.Size = new System.Drawing.Size(32, 17);
             this.lblCpfCli.TabIndex = 3;
             this.lblCpfCli.Text = "CPF:";
             // 
             // lblTituloCli
             // 
             this.lblTituloCli.AutoSize = true;
-            this.lblTituloCli.Location = new System.Drawing.Point(326, 23);
+            this.lblTituloCli.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblTituloCli.Location = new System.Drawing.Point(213, 12);
             this.lblTituloCli.Name = "lblTituloCli";
-            this.lblTituloCli.Size = new System.Drawing.Size(97, 15);
+            this.lblTituloCli.Size = new System.Drawing.Size(175, 30);
             this.lblTituloCli.TabIndex = 4;
             this.lblTituloCli.Text = "Cadastre-se Aqui";
             // 
             // tbxNomeCli
             // 
-            this.tbxNomeCli.Location = new System.Drawing.Point(161, 63);
+            this.tbxNomeCli.Location = new System.Drawing.Point(161, 93);
             this.tbxNomeCli.Name = "tbxNomeCli";
             this.tbxNomeCli.Size = new System.Drawing.Size(191, 23);
             this.tbxNomeCli.TabIndex = 5;
@@ -96,40 +104,55 @@ namespace SistemaDeEstacionamentoVictorHugoFigueiredo.View
             // 
             // tbxCelCli
             // 
-            this.tbxCelCli.Location = new System.Drawing.Point(161, 116);
+            this.tbxCelCli.Location = new System.Drawing.Point(161, 154);
             this.tbxCelCli.Name = "tbxCelCli";
             this.tbxCelCli.Size = new System.Drawing.Size(191, 23);
             this.tbxCelCli.TabIndex = 6;
             // 
             // tbxEmailCli
             // 
-            this.tbxEmailCli.Location = new System.Drawing.Point(161, 167);
+            this.tbxEmailCli.Location = new System.Drawing.Point(161, 222);
             this.tbxEmailCli.Name = "tbxEmailCli";
             this.tbxEmailCli.Size = new System.Drawing.Size(191, 23);
             this.tbxEmailCli.TabIndex = 7;
             // 
             // tbxCpfCli
             // 
-            this.tbxCpfCli.Location = new System.Drawing.Point(161, 219);
+            this.tbxCpfCli.Location = new System.Drawing.Point(161, 278);
             this.tbxCpfCli.Name = "tbxCpfCli";
             this.tbxCpfCli.Size = new System.Drawing.Size(191, 23);
             this.tbxCpfCli.TabIndex = 8;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(478, 291);
+            this.button1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button1.Location = new System.Drawing.Point(407, 327);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(141, 33);
             this.button1.TabIndex = 9;
             this.button1.Text = "Cadastrar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(65, 63);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 10;
+            this.pictureBox1.TabStop = false;
             // 
             // MenuCadastrar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClientSize = new System.Drawing.Size(612, 421);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.tbxCpfCli);
             this.Controls.Add(this.tbxEmailCli);
@@ -140,8 +163,13 @@ namespace SistemaDeEstacionamentoVictorHugoFigueiredo.View
             this.Controls.Add(this.lblEmailCli);
             this.Controls.Add(this.lblCelCli);
             this.Controls.Add(this.lblNomeCli);
+            this.KeyPreview = true;
             this.Name = "MenuCadastrar";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MenuCadastrar";
+            this.Load += new System.EventHandler(this.MenuCadastrar_Load);
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.MenuCadastrar_KeyPress);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -159,5 +187,6 @@ namespace SistemaDeEstacionamentoVictorHugoFigueiredo.View
         private System.Windows.Forms.TextBox tbxEmailCli;
         private System.Windows.Forms.TextBox tbxCpfCli;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
